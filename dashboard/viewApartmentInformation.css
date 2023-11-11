@@ -1,0 +1,544 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Dec 23, 2022, 9:30:58 PM
+    Author     : leigh
+*/
+
+*{
+    
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+    
+}
+
+#duplex{
+    
+    width:500px;
+    height: 500px;
+    background-color: orange;
+    display: none;
+    border: 5px #007bff solid;
+}
+
+
+#studio{
+    
+    width:500px;
+    height: 500px;
+    background-color: pink;
+    display: none;
+    border: 20px #843190 solid;
+}
+
+#room_devices_link{
+    
+    border: 5px navy solid;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    width: 200px;
+    height: auto;
+    
+}
+
+
+
+
+/** --------------------------------------------------------------------------------------------------------------------------------------------------
+
+/*****************************************************************************************************************************************************/
+
+ /* -********************************               TOP SIDE HORIZONTAL NAVIGATIONAL BAR STYLING  ****************************************************/
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+nav{
+    
+    width: 100%;
+    position: sticky;
+    height: 50px;
+    top: 0px;
+    background: #9FC8D9;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-family: serif;
+    
+}
+
+
+nav ul{
+    
+    display: flex;
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 150px;
+    margin-right: 60px;
+}
+
+nav ul li{
+    
+    list-style: none;
+}
+
+
+nav ul li a{
+    
+    display: block;
+    color: #0F76A0;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+   
+    margin-right: 40px;
+}
+
+header{
+    
+    padding: 10px 100px;
+    box-sizing: border-box;
+}
+
+header img{
+    
+    float: left;
+}
+
+/**
+nav ul li a.active,a.hover{
+    
+    background: white;
+}
+*/
+
+
+ .active, nav ul li:hover{
+    
+    background: white;
+    border-radius: 3px;
+    height: 50px;
+}
+
+
+.sub-menu-1{
+    
+    display:none;
+}
+
+nav ul li:hover .sub-menu-1{
+    
+    display: block;
+    position: absolute;
+    background-color: #9FC8D9;
+    margin-top: 5px;
+    margin-left: -15px;
+}
+
+nav ul li:hover .sub-menu-1 ul{
+    
+    display: block;
+    margin: 10px;
+}
+
+nav ul li:hover .sub-menu-1 ul li{
+    width: 120px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 20px;
+    text-align: left;
+    display: block;
+    
+}
+
+
+nav ul li:hover .sub-menu-1 ul li:last-child{
+    
+    border-bottom: none;
+    
+}
+
+
+nav  ul li:hover .sub-menu-1 ul li a:hover{
+    
+    font-size: 20px;
+    display: block;
+    
+}
+
+
+nav  ul li:hover .sub-menu-1 ul li a{
+    
+    
+    text-transform: lowercase;
+}
+
+.sub-menu-1 ul li:hover{
+    
+    display: block;
+    text-transform: lowercase;
+}
+
+
+nav .fa{
+    
+    margin-right: 10px;
+}
+
+
+
+
+
+
+#top-header{
+    
+    background: #0F76A0;
+    
+}
+
+
+
+
+
+
+
+
+/*************************************************************************************************************************************/      
+
+/*************************************************************************************************************************************/
+
+/**************************************************          STYING FOR YOUR APARTMENT INFORMATION ******************************************/
+                            
+/*************************************************************************************************************************************/     
+
+
+
+#apartmentinformation h1{
+    
+    margin-top: 30px;
+    
+    
+}
+
+
+
+
+/*************************************************************************************************************************************/      
+
+/*************************************************************************************************************************************/
+
+/**************************************************          STYLING FOR THE HEADER SECTION ******************************************/
+                            
+/*************************************************************************************************************************************/                            
+
+
+#top-header img{
+    
+    mix-blend-mode:multiply;
+}
+
+#top-header h1{
+    
+    font: bold 54px Arial, sans-serif;
+    color: white;
+}
+
+#top-header h3{
+    
+    font: bold 15px Arial, sans-serif;
+    color: white;
+}
+
+
+
+
+
+
+
+/*************************************************************************************************************************************/      
+
+/*************************************************************************************************************************************/
+
+/********************************************************      STYLING FOR THE MAIN SECTION ******************************************/
+                            
+/*************************************************************************************************************************************/  
+
+
+
+
+
+.mytabs{
+    
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 25px;
+}
+
+
+.mytabs input[type="radio"]{
+    
+    display: none;
+}
+
+
+.mytabs label{
+    
+    padding: 25px;
+    background: #e2e2e2;
+    font-weight: bolder;
+}
+
+
+.mytabs .tab{
+    
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    order: 1;
+    display: none;
+    
+}
+
+
+.mytabs .tab h2{
+    
+    font-size: 3em;
+}
+
+
+.mytabs input[type='radio']:checked  + label + .tab{
+    
+    display: block;
+}
+
+
+.mytabs input[type="radio"]:checked+label{
+    
+    background: white;
+}
+
+table{
+    
+    text-align: center;
+}
+
+
+
+
+
+/*************************************************************************************************************************************/      
+
+/*************************************************************************************************************************************/
+
+/****************************************************************     STYLING FOR THE footer SECTION *********************************/
+                            
+/*************************************************************************************************************************************/  
+
+
+.footer-container{
+    
+    background-color: #0F76A0;;
+    padding: 4rem 0 4rem 0;
+}
+
+.footer{
+    
+    width: 80%;
+    height: 40vh;
+    background-color:#9FC8D9;
+    color: #0F76A0;;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    border-radius: 40px;
+    font-weight: bolder;
+    padding-top: 40px;
+}
+
+.footer-heading{
+    
+    display:flex;
+    flex-direction: column;
+    margin-right: 4rem;
+    
+}
+
+.footer-heading h2{
+    
+    margin-bottom: 2rem;
+    
+}
+
+
+.footer-heading a{
+    
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    
+}
+
+.footer-heading a:hover{
+    
+    color: red;
+    transition: 0.3s ease-out;
+}
+
+.footer-email-form h2{
+    
+    margin-bottom: 2rem;
+}
+
+#footer-email{
+    
+    width: 250px;
+    height:40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+#footer-email::placeholder{
+    
+    color: #b1b1b1;
+}
+
+
+#footer-email-btn{
+    
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #0F76A0;
+    outline: none;
+    border:none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+#footer-email-btn:hover{
+    
+    cursor: pointer;
+    background-color: #337af1;
+    transition:all 0.4s ease-out
+}
+
+
+/*   ************************************************************************************************************************************************  */
+
+/*   *********************  BLENDING THE SOCIAL MEDIA LINKS WITH THE BACKGROUND  ********************************************************************* */
+
+
+/*   ************************************************************************************************************************************************** */
+
+
+
+
+
+
+#facebook{
+    
+    mix-blend-mode:multiply;
+}
+
+#twitter{
+    
+    mix-blend-mode:multiply;
+}
+
+
+#youtube{
+    
+    mix-blend-mode:multiply;
+}
+
+#linkedin{
+    
+    mix-blend-mode:multiply;
+}
+
+#instagram{
+    
+    mix-blend-mode:multiply;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ************************************************************************************************************************************************ */
+
+/*  ***************************************************************** STYLING THE MAIN MENU CONTENT **************************************** */
+
+
+#edit{
+  background-color:#0F76A0; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+#edit a{
+    
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+
+
+#delete{
+  background-color: #0F76A0; /* Blue */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+#delete a{
+    
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+
+
+
+

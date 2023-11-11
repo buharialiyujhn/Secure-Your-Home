@@ -1,0 +1,146 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.navbar ul li{
+   list-style: none;
+   display: inline-block;
+   margin: 0 20px;
+   position: relative;
+}
+
+body{
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-image: url(background.jpg);
+   background-position-x: right;
+}
+ .wrapper{
+   position: relative;
+   max-width: 430px;
+   width: 100%;
+   background: #fff;
+   padding: 32px;
+   border-radius: 6px;
+   box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+ }
+ .wrapper h2{
+   position: relative;
+   font-size: 22px;
+   font-weight: 600;
+   color: #333;
+ }
+ .wrapper h2::before{
+   position: absolute;
+   height: 3px;
+   width: 28px;
+   border-radius: 22px;
+   background:rgb(141, 141, 86);
+ }
+ .wrapper form{
+   margin-top: 30px;
+ }
+ .wrapper form .input-box{
+   height: 42px;
+   margin: 10px 0;
+ }
+ form .input-box input{
+   height: 100%;
+   width: 100%;
+   outline: none;
+   padding: 0 15px;
+   font-size: 17px;
+   font-weight: 400;
+   color: #333;
+   border: 1.5px solid #C7BEBE;
+   border-bottom-width: 2.5px;
+   border-radius: 6px;
+   transition: all 0.3s ease;
+ }
+ .input-box input:focus,
+ .input-box input:valid{
+   border-color: #4070f4;
+ }
+ form .policy{
+   display: flex;
+   align-items: center;
+ }
+ form h3{
+   color: #707070;
+   font-size: 14px;
+   font-weight: 500;
+   margin-left: 10px;
+ }
+ 
+
+.button2 {
+  display: inline-block;
+  border-radius: 30px;
+  background-color: blue;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 10px;
+  padding: 10px 30px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button2:hover span {
+  padding-right: 25px;
+}
+
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+ .button {
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+.button1 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+ form .text h3{
+  color: #333;
+  width: 100%;
+  text-align: center;
+ }
+ form .text h3 a{
+   color: #4070f4;
+   text-decoration: none;
+ }
+ form .text h3 a:hover{
+   text-decoration: underline;
+ }

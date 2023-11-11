@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Secure Your Home</title>
+  <link rel="stylesheet" type="text/css" href="style2.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="script2.js"></script>
+</head>
+<body>
+  <header>
+    <div id="logo"><img src="logo.jpg" width="100px" height="100px"/></div>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="about us.html">About Us</a></li>
+      <li><a onclick="$('#main-content').load('/signup/register.php')">Sign Up</a></li>
+      <li><a onclick="$('#main-content').load('/login/index.php')">Login</a></li>
+      <li><a href="contact us.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div id="main-content">
+        <div id="lhs">
+            <h4>Our Service</h4>
+            <p>We provide the security for you home, offices, restaurants and so on.</p>
+          </div>
+          
+          <div id="rhs">
+            <h1>Welcome to</h1>
+            <h1>Secure Your Home</h1>
+          </div>
+      Loading...
+    </div>
+  </main>
+  <script>
+    // Load the home page by default
+    $('#main-content').load('/home/index.php');
+  </script>
+</body>
+</html>

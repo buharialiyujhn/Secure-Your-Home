@@ -1,0 +1,108 @@
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .column {
+    width: 30%;
+    padding: 10px;
+    display: inline-block;
+    float: left;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-image {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .card-container {
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .card-name {
+    margin-top: 0;
+    font-weight: bold;
+  }
+  
+  .card-title {
+    margin-top: 0;
+    font-size: 14px;
+    color: grey;
+  }
+  
+  .card-email a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .card-email a:hover {
+    text-decoration: underline;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .about-section {
+    padding: 50px;
+    color: rgb(241, 246, 248);
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after,
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: rgb(252, 244, 244);
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: rgb(243, 236, 236);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: rgb(253, 244, 244);
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  
+    h2 {
+      color: white;
+    }
+  }
+  
+  a {
+    color: gold;
+  }
